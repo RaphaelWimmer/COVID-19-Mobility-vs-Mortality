@@ -1,4 +1,4 @@
-# Extended Replication of "Stay‐at‐home policy is a case of exception fallacy: an internet‐based ecological study" (2021)
+# Investigation on the Robustness of the Method used in "Stay‐at‐home policy is a case of exception fallacy: an internet‐based ecological study" (2021)
 
 Code and data investigating the claim by Savaris et al. that a reduction in mobility is not associated with a reduced COVID-19 mortality for most countries.
 
@@ -8,8 +8,13 @@ They conclude that *"using this methodology and current data, in ~ 98% of th
 
 The notebook ``savaris_covid_annotated.ipynb`` is adapted from the original [Jupyter notebook by Savaris et al.](https://gist.github.com/rsavaris66/eccfc6caf4c9578d676c134fac74d3fe)
 Using this notebook and the accompanying datasets, we show that the algorithm by Savaris et al. does not find an effect of lockdowns on mortality even in artificial datasets that strongly suggest an effect of lockdowns.
-In fact, the algorithm finds a stronger effect of lockdowns in random data.
-This suggests that the main reason why Savaris et al. could not find an effect is that their algorithm is generally incapable of finding such effects even if they exist.
+In fact, the algorithm finds a stronger effect of lockdowns in random data than in the optimized datasets.
+While an artificial example dataset shared by R.F. Savaris seems to demonstrate that their method works, adding a little bit of noise to the data makes the effect disappear again.
+In summary, these findings suggest that the main reason why Savaris et al. could not find an effect of lockdowns on mortality is that their algorithm is generally incapable of finding such effects even if they exist.
+
+These code and datasets are supplementary materials to a *Matters Arising* letter to Nature Scientific Reports.
+
+Contact: Raphael Wimmer <raphael.wimmer@ur.de>
 
 Files:
 
