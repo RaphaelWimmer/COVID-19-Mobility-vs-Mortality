@@ -8,8 +8,19 @@ They conclude that *"using this methodology and current data, in ~ 98% of th
 
 The notebook ``savaris_covid_annotated.ipynb`` is adapted from the original [Jupyter notebook by Savaris et al.](https://gist.github.com/rsavaris66/eccfc6caf4c9578d676c134fac74d3fe)
 Using this notebook and the accompanying datasets, we show that the algorithm by Savaris et al. does not find an effect of lockdowns on mortality even in artificial datasets that strongly suggest an effect of lockdowns.
+
+![Figure 1: A set of hypothetical countries for which there is an obvious effect of mobility on mortality.](images/Figure_1_Hypothetical_Countries.png?raw=true)
+
+![Figure 2: A heatmap of comparisons of the hypothetical countries using Savaris' method. None of the comparisons shows an effect according to the](images/Figure_2_Heatmap_Hypothetical_Countries.png?raw=true)
+
 In fact, the algorithm finds a stronger effect of lockdowns in random data than in the optimized datasets.
+
+![Figure 6: A heatmap of comparisons of countries with random mobility/mortality data. Comparisons with p < .05 indicate an effect of lockdowns.](images/Figure_6_Heatmap_Random_Countries.png?raw=true)
+
 While an artificial example dataset shared by R.F. Savaris seems to demonstrate that their method works, adding a little bit of noise to the data makes the effect disappear again.
+
+![Figure 7: Adding noise to Savaris "proof-of-concept" dataset destroys the claimed effect](images/Figure_7_Savaris_Custom_Dataset.png?raw=true)
+
 In summary, these findings suggest that the main reason why Savaris et al. could not find an effect of lockdowns on mortality is that their algorithm is generally incapable of finding such effects even if they exist.
 
 These code and datasets are supplementary materials to a *Matters Arising* letter to Nature Scientific Reports.
